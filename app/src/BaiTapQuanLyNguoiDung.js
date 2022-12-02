@@ -140,7 +140,7 @@ class BaiTapQuanLyNguoiDung extends Component {
     return (
       <ThemeProvider theme={theme.theme}>
         <Container style={{ maxWidth: "calc(100% - 80px)" }}>
-          <h4>Lập trình Front End Master ReactJS / Chuong 3 / Nguyen Thi Hong Hanh</h4>
+          <h4>User Management</h4>
           <Dropdown
             onChange={(e) =>
               this.props.dispatch(changeThemeAction(e.target.value))

@@ -19,8 +19,8 @@ class TableDanhSachNguoiDung extends Component {
         <Td>{phone}</Td>
         <Td>{getTypeNameById(userType)}</Td>
         <Td>
-          <PrimaryButton type="button" onClick={(e) => handleClearErrors(e, user)} className="btn btn-primary mr-2">Chỉnh sửa</PrimaryButton>
-          <DangerButton  type="button" onClick={() => this.props.dispatch(deleteUserAction(id))} className="btn btn-danger">Xóa</DangerButton>
+          <PrimaryButton type="button" onClick={(e) => handleClearErrors(e, user)} className="btn btn-primary mr-2">Edit</PrimaryButton>
+          <DangerButton  type="button" onClick={() => this.props.dispatch(deleteUserAction(id))} className="btn btn-danger">Remove</DangerButton>
         </Td>
       </Tr>
     })
@@ -30,18 +30,18 @@ class TableDanhSachNguoiDung extends Component {
       <Table>
         <Thead>
           <Tr>
-            <Th colSpan={8}>Danh sách người dùng</Th>
+            <Th colSpan={8}>Account List</Th>
           </Tr>
         </Thead>
         <Tbody>
           <Tr className='head'>
-            <Td>STT</Td>
-            <Td>Tài khoản</Td>
-            <Td>Họ tên</Td>
-            <Td>Mật khẩu</Td>
+            <Td>ID</Td>
+            <Td>Account</Td>
+            <Td>Username</Td>
+            <Td>Password</Td>
             <Td>Email</Td>
-            <Td>Số điện thoại</Td>
-            <Td>Loại người dùng</Td>
+            <Td>Phone number</Td>
+            <Td>User type</Td>
             <Td></Td>
           </Tr>
           {this.renderUsers()}

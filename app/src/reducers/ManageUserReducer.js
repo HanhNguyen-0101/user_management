@@ -4,8 +4,8 @@ import { UserTypeModel } from '../models/UserTypeModel';
 import { CHANGE_THEME, DELETE_USER, EDIT_USER, REGISTE_USER, UPDATE_USER } from '../types/ManageUsersType';
 import { ThemeList } from './../components/styleComponents/theme/ManageTheme';
 export const userType = [
-    new UserTypeModel(1, 'Khách hàng'),
-    new UserTypeModel(2, 'Nhân viên')
+    new UserTypeModel(1, 'Customer'),
+    new UserTypeModel(2, 'Staff')
 ]
 const stateDefault = {
     theme: ThemeList[0],
